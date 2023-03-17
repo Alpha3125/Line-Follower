@@ -9,7 +9,7 @@ Autonomous Line follower, started as a part of [SDP 2.0](https://www.niser.ac.in
 - IR Sensors x5
 - L298N (2C) Motor Driver
 - DC Motors x2
-- Chassis, Motor Wheels x2, Castor x1
+- Chassis(Acrylic sheets:3mm,5mm), Motor Wheels x2, Castor wheel x1
 - Nuts & Bolts, Glue gun, Soldering iron, Double Tapes
 # Working Idea
 # Code (Arduino)
@@ -19,7 +19,7 @@ Written on Arduino. There are two version:
 - PID (_Used in Wissenaire-23_)  
     Codes: v20,v21,v22,v32,v4
     v4 being the latest.  
-    _Note_  that v4 code has an `speed(255,255)` in `//sharp left` case. This was a deliberate change to account for the multiple left turns in the track. This also helped in escaping a right loop, significantly reducing lap time.
+    _Note_  that v4 code has an `speed(255,255)` in `//sharp left` case. This was a deliberate change to account for the multiple left turns in the track. This also helped in escaping a right loop(where normally it should have gone straight,into the loop); hence significantly reducing lap time.
 # Circuit
 Generic Design for motors with 5 sensors to arduino.
 ### Wirings
@@ -31,7 +31,7 @@ Generic Design for motors with 5 sensors to arduino.
 
 Since the cut was made on 5mm acrylic, the front panel was not required in the final setup. _Note_ that using the front panel keeps all the sensors one line, as in a generic setup. _Otherwise_ it stays in an inverted V shape which can give some strategical advantage (like detecting crosses better).
 ### Irregularities/Errors 
-The top screw holes might be a bit off. 
+The top screw holes might be a bit off in the design, which was made to screw in the motor drivers.
 # Members
 Aditya Kamble (Captain) - Chassis Design, Co-ordination  
 Vishal Meena - Code, Algorithm  
